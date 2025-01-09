@@ -3,8 +3,9 @@ export default function Home() {
     <>
       <h1>Koti</h1>
       <p>
-          Tämä staattinen Next.js-sivusto on luotu osaksi kandidaatintyötä Tampereen yliopistossa.
+        Tämä staattinen Next.js-sivusto on luotu osaksi kandidaatintyötä
+        Tampereen yliopistossa.
       </p>
     </>
-  );
+  )
 }
