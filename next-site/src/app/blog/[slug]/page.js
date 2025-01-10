@@ -1,3 +1,5 @@
+import BackButton from "@/app/components/backbutton"
+
 export async function generateStaticParams() {
   const data = await fetch("https://jsonplaceholder.typicode.com/posts/")
   const posts = await data.json()
@@ -17,6 +19,7 @@ export default async function Page({ params }) {
     <>
       <h1>{post.title}</h1>
       <section>{post.body}</section>
+      <BackButton />
       <h2>Kommentit</h2>
       <ul>
         {comments.map((comment) => (
