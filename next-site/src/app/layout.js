@@ -1,3 +1,4 @@
+import Link from "next/link"
 import "./globals.css"
 
 export const metadata = {
@@ -12,9 +13,9 @@ export default function RootLayout({ children }) {
         <nav>
           <div>
             <img id="logo" alt="" src="next.svg" />
-            <a href="/">Koti</a>
-            <a href="/blog">Blogi</a>
-            <a href="/about">Tietoja</a>
+            <Link href="/">Koti</Link>
+            <Link href="/blog">Blogi</Link>
+            <Link href="/about">Tietoja</Link>
           </div>
         </nav>
         <main>{children}</main>
