@@ -1,5 +1,4 @@
 import BackButton from "@/app/components/backbutton"
-import FadeDiv from "@/app/components/fadediv"
 
 export async function generateStaticParams() {
   const data = await fetch("https://jsonplaceholder.typicode.com/posts/")
@@ -17,7 +16,7 @@ export default async function Page({ params }) {
   ])
 
   return (
-    <FadeDiv>
+    <>
       <h1>{post.title}</h1>
       <section>{post.body}</section>
       <BackButton />
@@ -32,6 +31,6 @@ export default async function Page({ params }) {
           </li>
         ))}
       </ul>
-    </FadeDiv>
+    </>
   )
 }

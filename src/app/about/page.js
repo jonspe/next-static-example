@@ -1,8 +1,6 @@
-import FadeDiv from "../components/fadediv"
-
 export default function Home() {
   return (
-    <FadeDiv>
+    <>
       <h1>Tietoja</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad veniam accusamus repellat vitae! Quis,
@@ -21,6 +19,6 @@ export default function Home() {
         eligendi minima. Incidunt, odio voluptates ratione minus, rem assumenda accusantium eaque, atque nulla
         consectetur possimus!
       </p>
-    </FadeDiv>
+    </>
   )
 }
